@@ -1,7 +1,8 @@
 .containers { 
     display: grid;
+    font-size: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px; 
+    gap: 5px; 
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;

@@ -7426,66 +7426,56 @@ export const card={
           "operator": "Administrateur",
           "shoplist": {
             "8502b411-a195-4c6d-a3af-b92619097278": {
-              "town": "LISSES",
+              "town": "GUYANCOURT",
               "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.webp",
               "Nature": "boutique",
               "shopid": 2,
-              "Address": "2 PL CHARLOTTE PERRIAND , 78280",
+              "Address": "2 PL CHARLOTTE PERRIAND ",
               "Company": "Pizza time Guyancourt",
               "Country": "FRANCE",
-              "PostalCode": "91090",
+              "PostalCode": "78280",
               "Responsible": ""
             }
-          }, 
+           ,
            
             "8502b411-a195-4c6d-a3af-b92619097279": {
-              "town": "LISSES",
+              "town": "MEAUX",
               "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.webp",
               "Nature": "boutique",
               "shopid": 3,
-              "Address": "24 B RUE LEONARD DE VINCI",
-              "Company": "boutique1",
+              "Address": "9 RUE TIME CORNILLON",
+              "Company": "Pizza time MEAUX",
               "Country": "FRANCE",
-              "PostalCode": "91090",
+              "PostalCode": "77100 ",
               "Responsible": ""
             
           },
           "8502b411-a195-4c6d-a3af-b92619097271": {
-            "town": "LISSES",
+            "town": "AMINENS",
             "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/3/PromoWeb.webp",
             "Nature": "boutique",
             "shopid": 4,
-            "Address": "24 B RUE LEONARD DE VINCI",
-            "Company": "boutique1",
+            "Address": "6 RUE LATTRE DE TASSIGNY",
+            "Company": "PIZZA TIME AMINES CENTRE VILLE",
             "Country": "FRANCE",
-            "PostalCode": "91090",
+            "PostalCode": "80000",
             "Responsible": ""
           
         },
          "8502b411-a195-4c6d-a3af-b92619097273": {
-            "town": "LISSES",
+            "town": "AMIENS",
             "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/8/PromoWeb.webp",
             "Nature": "boutique",
             "shopid": 5,
             "Address": "24 B RUE LEONARD DE VINCI",
-            "Company": "boutique1",
+            "Company": "PIZZA TIME AMIENS SAINT-LEU",
             "Country": "FRANCE",
-            "PostalCode": "91090",
+            "PostalCode": "80000",
             "Responsible": ""
           
-        },
-        "8502b411-a195-4c6d-a3af-b92619097272": {
-            "town": "LISSES",
-            "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/7/PromoWeb.webp",
-            "Nature": "boutique",
-            "shopid": 6,
-            "Address": "24 B RUE LEONARD DE VINCI",
-            "Company": "boutique1",
-            "Country": "FRANCE",
-            "PostalCode": "91090",
-            "Responsible": ""
-          
-        },
+        }
+      },
+      
        
           "workflow": {
             "060eccfb-d406-41a1-9685-b49a44c8e594": {

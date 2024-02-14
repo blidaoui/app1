@@ -4,7 +4,10 @@ import "./globals.css";
 import imgheader from "../app/img/imgheader.jpg"
 import {card} from "../app/components/constants"
 
+
+
 export default function page() {
+ 
   return (
    <div> 
      <div className='img'> 
@@ -20,19 +23,13 @@ export default function page() {
       </div>  
 
 <span> <h1 className='text'>Nos magasins à proximité</h1></span>
-
-    
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
+    <div className='containers' >
     {Object.values(card.shoplist).map((item:any,id:number) => (
       <div key={id}>
          <img src={item.image} alt={`Produit`} />
-        <h2>{item.Company}</h2>
-        <p>Ville: {item.town}</p>
-        <p>Adresse: {item.Address}</p>
-      
-       
-
-      
+        <p >{item.Company} </p>
+        <p> {item.Address},{item.PostalCode} {item.town}</p>
+        
       </div>
     ))}
   </div>
