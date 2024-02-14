@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '../img/logo.webp'
-const Header = () => {
-  
+import dynamic from 'next/dynamic'; 
 
+const DropDownMenu = dynamic(() => import('./DropDownMenu'), { ssr: false }); // Render DropDownMenu on the client side only
+
+const Header = () => {
   return (
     <div className='header'>
         
@@ -21,7 +23,7 @@ const Header = () => {
        alt="Picture of the author"/> </div> 
      </div>
     
-     <a href="/Login"><i className="fa fa-fw fa-user "></i> </a>
+    <DropDownMenu />
        
          </div>
     </nav> 
