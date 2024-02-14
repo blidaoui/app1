@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import cc from '../img/cc.png'
-
+import logo from '../img/logo.webp'
 const Header = () => {
   
 
@@ -15,15 +14,14 @@ const Header = () => {
        
        <div className='logo'> 
        <Image 
-        src={cc}
-        width={150}
-       height={150}
+        src={logo}
+        width={80}
+       height={80}
        className="hidden md:block"
        alt="Picture of the author"/> </div> 
      </div>
     
-     <a href="#"><i className="fa fa-fw fa-user"></i> Login</a>
-         
+     <a href="/Login"><i className="fa fa-fw fa-user "></i> </a>
        
          </div>
     </nav> 
