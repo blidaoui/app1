@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import "./globals.css";
 import imgheader from "../app/img/imgheader.jpg"
-import {card} from "../app/components/constants"
+import {card} from "./components/constants"
 
 
 
@@ -15,7 +15,7 @@ export default function page() {
        src={imgheader}
        style={{
         width: '100%',
-        height: '250',
+        height: '250', 
          }}
        
         className="hidden md:block"
@@ -23,20 +23,17 @@ export default function page() {
       </div>  
 
 <span> <h1 className='text'>Nos magasins à proximité</h1></span>
-    <div className='containers' >
+    <div className='containers'
+     >
     {Object.values(card.shoplist).map((item:any,id:number) => (
       <div key={id}>
-         <img src={item.image} alt={`Produit`} />
+         <img src={item.image} alt={`Produit`} className='image' />
         <p >{item.Company} </p>
         <p> {item.Address},{item.PostalCode} {item.town}</p>
         
       </div>
     ))}
   </div>
-  
-  
-  
-
    
  </div>
 

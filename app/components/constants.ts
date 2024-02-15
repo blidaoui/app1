@@ -7427,7 +7427,7 @@ export const card={
           "shoplist": {
             "8502b411-a195-4c6d-a3af-b92619097278": {
               "town": "GUYANCOURT",
-              "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.webp",
+              "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.png",
               "Nature": "boutique",
               "shopid": 2,
               "Address": "2 PL CHARLOTTE PERRIAND ",
@@ -7440,7 +7440,7 @@ export const card={
            
             "8502b411-a195-4c6d-a3af-b92619097279": {
               "town": "MEAUX",
-              "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.webp",
+              "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/3/PromoWeb.png",
               "Nature": "boutique",
               "shopid": 3,
               "Address": "9 RUE TIME CORNILLON",
@@ -7452,7 +7452,7 @@ export const card={
           },
           "8502b411-a195-4c6d-a3af-b92619097271": {
             "town": "AMINENS",
-            "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/3/PromoWeb.webp",
+            "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/8/PromoWeb.png",
             "Nature": "boutique",
             "shopid": 4,
             "Address": "6 RUE LATTRE DE TASSIGNY",
@@ -7464,7 +7464,7 @@ export const card={
         },
          "8502b411-a195-4c6d-a3af-b92619097273": {
             "town": "AMIENS",
-            "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/8/PromoWeb.webp",
+            "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/7/PromoWeb.png",
             "Nature": "boutique",
             "shopid": 5,
             "Address": "24 B RUE LEONARD DE VINCI",

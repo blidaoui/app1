@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <div className='header'>
         
-      <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div> 
+        <nav >
          <div className="container-fluid">
          <div className='container'>
        
@@ -21,11 +21,9 @@ const Header = () => {
        height={80}
        className="hidden md:block"
        alt="Picture of the author"/> </div> 
-     </div>
-    
-    <DropDownMenu />
-       
-         </div>
+       </div>
+      </div>
+         <DropDownMenu />
     </nav> 
     </div>
          

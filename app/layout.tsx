@@ -15,8 +15,9 @@ export default function RootLayout({children}:any )
     <html lang="en">
       <body className={inter.className}>
       <Header />
-     
-     
+    
+      
+      
       <main className="Container">{children}</main>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 

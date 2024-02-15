@@ -1,21 +1,19 @@
-
 .containers { 
     display: grid;
-    font-size: 16px;
+    font-size: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px; 
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    padding-top: 2%;
   }
 
-
- 
   .text{
-    text-align: center; 
+    padding-left: 5%;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
 
 
   }
@@ -35,4 +33,6 @@
   }
   
   
-  
+  .image{
+    width: 100%;
+  }

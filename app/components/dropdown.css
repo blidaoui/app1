@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
- *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Ubuntu', sans-serif;
- }
- body {
- min-height: 100vh;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
 
  .navigation {
    position: fixed;
    top: 20px;
    right: 20px;
-  width: 120px;
+   width: 120px;
    height: 60px;
    background: #fff;
    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
@@ -36,7 +37,7 @@
    position: relative;
    width: 60px;
    height: 60px;
-   background: #fff;
+   background: #ffffff;
    overflow: hidden;
    display: flex;
    align-items: center;
@@ -117,7 +118,7 @@
     
        position: absolute;
        width: 100%;
-       height: calc(100% - 60px);
+       height: auto;
        margin-top: 60px;
        padding: 20px;
        border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -133,13 +134,115 @@
        font-size: 1em;
        text-decoration: none;
        color: #555;
-       margin: 20px 0;
+       margin: 5px 0;
    }
-  
+   
    .menu li a:hover{
-       color: #4e65ff;
+       color: #d1d5ea;
    }
   
    .menu li a ion-icon{
        font-size: 1.5em;
    } 
+   .menu p{
+    margin: 0.2px 0;
+    }
+   
+   .input {
+    color: #0b0a0a;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
+   button {
+    --primary-color: #020302;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 8px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: 0.5em 0.5em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -2px;
+    right: 2px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
