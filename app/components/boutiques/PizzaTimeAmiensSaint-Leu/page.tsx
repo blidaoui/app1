@@ -13,7 +13,7 @@ export default function page() {
   const companyToShow = Object.values(card.shoplist)[companyIndexToShow];
 
   return (
-    <div className='img'> 
+    <div className='img' style={{ position: 'relative' }}> 
       <Image  
         src={imgheader}
         style={{
@@ -23,7 +23,16 @@ export default function page() {
         className="hidden md:block"
         alt="pizza"
       />
-      <div className="containers">
+      <div className="containers" style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        textAlign: 'center',
+        color: 'white',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        padding: '20px',
+      }}>
         <div>
           <p>{`${companyToShow.Company.replace(/\s/g, "")}`} </p>
           <p>
