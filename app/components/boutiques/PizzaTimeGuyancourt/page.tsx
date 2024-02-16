@@ -4,15 +4,13 @@ import imgheader from '../../../img/imgheader.jpg';
 import { card } from "../../../components/constants";
 
 export default function page() {
-  // Supposons que vous voulez afficher la première entreprise dans la liste
-  const companyIndexToShow = 0; // Changez ceci pour l'indice de l'entreprise que vous souhaitez afficher
-
-  // Assurez-vous que l'indice est valide
+  
+  
+  const companyIndexToShow = 0; 
   if (companyIndexToShow < 0 || companyIndexToShow >= Object.values(card.shoplist).length) {
     return <p>Index d'entreprise invalide</p>;
   }
 
-  // Récupérez les détails de l'entreprise à afficher
   const companyToShow = Object.values(card.shoplist)[companyIndexToShow];
 
   return (
@@ -31,17 +29,51 @@ export default function page() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
         color: 'white',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        padding: '20px',
+        padding: '10px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}>
         <div>
-          <p>{`${companyToShow.Company.replace(/\s/g, "")}`} </p>
+          <p>{`${companyToShow.Company.replace(/\s/g, "")}`}  </p>
+          <p>ouvert de {companyToShow.openingTime1} à {companyToShow.closingTime1} et de {companyToShow.openingTime2}  à {companyToShow.closingTime2}</p>
           <p>
             {" "}
-            {companyToShow.Address},{companyToShow.PostalCode} {companyToShow.town}
+            {companyToShow.Address},{companyToShow.PostalCode} {companyToShow.town}   
           </p>
+          <a href=''>Informations utiles</a>
+            <div></div>
+          <a href="pg">
+              <img
+                src="https://static.vecteezy.com/ti/vecteur-libre/p1/32222460-en-especes-paiement-vecteur-icone-vectoriel.jpg"
+                style={{ height: "40px", backgroundColor: "#24A451" }}
+                className="rounded-circle"
+                alt="no data"
+              />
+            </a>
+          
+            <a href="/nomDossier">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0h2C15VPNVMWxosiKh__iI3v9dLDrlUZdCQ&usqp=CAU"
+                style={{ height: "40px", backgroundColor: "#24A451" }}
+                className="rounded-circle"
+                // className="rounded-circle"
+                alt="no data"
+              />
+            </a>
+
+            <a href="/nomDossier">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6127b214067d690b48359e03/9acacf88-f8fc-4de6-8226-fd8bee969746/TR+%2810%292.png"
+                style={{ height: "40px", backgroundColor: "#3a3c3b" }}
+                className="rounded-circle"
+                // className="rounded-circle"
+                alt="no data"
+              />
+            </a>
+        
         </div>
       </div>
     </div>   

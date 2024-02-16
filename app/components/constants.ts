@@ -7434,7 +7434,11 @@ export const card={
       "Company": "Pizza Time Guyancourt",
       "Country": "FRANCE",
       "PostalCode": "78280",
-      "Responsible": ""
+      "Responsible": "",
+      "openingTime1":"11:00", 
+      "closingTime1":" 13:30",
+      "openingTime2":"18:00", 
+      "closingTime2":" 23:00",
     }
    ,
    
@@ -7447,7 +7451,9 @@ export const card={
       "Company": "Pizza Time Meaux",
       "Country": "FRANCE",
       "PostalCode": "77100 ",
-      "Responsible": ""
+      "Responsible": "",
+      "openingTime":"", 
+      "closingTime":"",
     
   },
   "8502b411-a195-4c6d-a3af-b92619097271": {
@@ -7459,8 +7465,9 @@ export const card={
     "Company": "Pizza Time Amiens Centre Ville",
     "Country": "FRANCE",
     "PostalCode": "80000",
-    "Responsible": ""
-  
+    "Responsible": "",
+    "openingTime1":"18:00", 
+    "closingTime1":"22:30",
 },
  "8502b411-a195-4c6d-a3af-b92619097273": {
     "town": "AMIENS",
@@ -7471,7 +7478,9 @@ export const card={
     "Company": "Pizza Time Amiens Saint-Leu",
     "Country": "FRANCE",
     "PostalCode": "80000",
-    "Responsible": ""
+    "Responsible": "",
+    "openingTime":"", 
+    "closingTime":"",
   
 }
 },
