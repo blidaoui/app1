@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from "next/image";
-import imgheader from '../../../img/imgheader.jpg';
 import { card } from "../../../components/constants";
+import Icons from '../../icons/Icons';
+import Page from '../../Imagenav/Page';
 
 export default function page() {
   
@@ -12,17 +12,9 @@ export default function page() {
 
   const companyToShow = Object.values(card.shoplist)[companyIndexToShow];
 
-  return (
+  return ( <>
     <div className='img' style={{ position: 'relative' }}> 
-      <Image  
-        src={imgheader}
-        style={{
-          width: '100%',
-          height: '250', 
-        }}
-        className="hidden md:block"
-        alt="pizza"
-      />
+ <Page/>
       <div className="containers" style={{
         position: 'absolute',
         top: '50%',
@@ -44,37 +36,30 @@ export default function page() {
           </p>
           <a href=''>Informations utiles</a>
             <div></div>
-          <a href="pg">
-              <img
-                src="https://static.vecteezy.com/ti/vecteur-libre/p1/32222460-en-especes-paiement-vecteur-icone-vectoriel.jpg"
-                style={{ height: "40px", backgroundColor: "#24A451" }}
-                className="rounded-circle"
-                alt="no data"
-              />
-            </a>
-          
-            <a href="/nomDossier">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0h2C15VPNVMWxosiKh__iI3v9dLDrlUZdCQ&usqp=CAU"
-                style={{ height: "40px", backgroundColor: "#24A451" }}
-                className="rounded-circle"
-                // className="rounded-circle"
-                alt="no data"
-              />
-            </a>
-
-            <a href="/nomDossier">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/6127b214067d690b48359e03/9acacf88-f8fc-4de6-8226-fd8bee969746/TR+%2810%292.png"
-                style={{ height: "40px", backgroundColor: "#3a3c3b" }}
-                className="rounded-circle"
-                // className="rounded-circle"
-                alt="no data"
-              />
-            </a>
+         <Icons/>
         
         </div>
       </div>
     </div>   
-  );
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#">{companyToShow.produit}</a>
+            </li>
+            <select className="max-w-xs nav-link"> 
+                  {companyToShow.autreproduit.map((produit, index) => (
+                    <option key={index} value={produit}> {produit}</option>
+                  ))}
+                 
+                </select>
+          </ul>
+        </div>
+      </nav>
+    </div>
+ </> );
 }

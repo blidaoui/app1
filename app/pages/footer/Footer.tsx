@@ -45,7 +45,7 @@ function Footer() {
           <ul>
             <br />
             <br />
-            <a>Mentions légales</a>
+            <a href="" style={{"cursor": "pointer"}}>Mentions légales</a>
             <br />
 
             <a>Politique de confidentialité</a>

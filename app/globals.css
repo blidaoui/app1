@@ -1,39 +1,37 @@
+
 .containers { 
     display: grid;
     font-size: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     gap: 5px; 
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     padding-top: 2%;
+
 }
 
+.h6{
+  padding-bottom: 5%;
+  padding-top: 5%;
+  display: flex;
+}
 
   .text{
-    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-decoration-style: wavy;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     padding-top: 2%;
     padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 
 
   }
 
-  .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: rgb(141, 83, 83);
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
-  }
-  
   
   .image{
     width: 100%;
   }
+ 

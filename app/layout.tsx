@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"],
 weight:["400","700"] });
 
 export const metadata: Metadata = {
-  title: "Click&Collect",
+  title: "Pizza time",
 };
 
 export default function RootLayout({children}:any )
@@ -20,6 +20,9 @@ export default function RootLayout({children}:any )
       
       
       <main className="Container">{children}</main>
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+      <link href="./output.css" rel="stylesheet"/>
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossOrigin="anonymous"></script>
