@@ -1,7 +1,7 @@
 import React from "react";
 import "./globals.css";
 import { card } from "./components/constants";
-import Header from "./components/shop/Header";
+import Header from "./components/maps/Header";
 import Icons from "./components/icons/Icons";
 import Page from "./components/Imagenav/Page";
 

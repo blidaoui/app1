@@ -55,9 +55,7 @@ export default function page() {
              {companyToShow.produit.map((produit:any, index:number) => (
                 <li key={index} > {produit}  </li>
                ))}
-              
-         
-                
+               
                 <select className="max-w-xs nav-link"> 
                   {companyToShow.autreproduit.map((produit:any, index:number) => (
                     <option key={index} value={produit}> {produit}</option>
