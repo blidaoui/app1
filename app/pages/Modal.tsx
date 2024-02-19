@@ -4,15 +4,21 @@ import moto from '../../public/icons/moto.png'
 import panierrepas from '../../public/icons/panierrepas.png'
 import { useState } from 'react';
 import '@/app/pages/modal.css';
+import { Button } from '@nextui-org/react';
 const App = () => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
     setShowModal(!showModal);
   };
+    const [selectedTime, setSelectedTime] = useState('');
+  
+    const handleTimeChange = (event:any) => {
+      setSelectedTime(event.target.value);
+    };
 
   return (
-    <div>
+    <div className='modal1'>
       <button onClick={toggleModal} className='button type1' type="button">
       <span className="btn-txt">Commander</span>
       </button>
@@ -49,7 +55,19 @@ const App = () => {
       </div>
       </div>
      <div className='text'> <p> Aujourd'hui</p></div>
+     <div>
+      <label htmlFor="timeInput"></label>
+      <input
+        type="time"
+        id="timeInput"
+        className="timeInput"
+        value={selectedTime}
+        onChange={handleTimeChange}
+      />
+    </div>
+    <Button className='button'>valider</Button>
           </div>
+    
         </div>
       )}
       <style jsx>{`

@@ -15,7 +15,7 @@ export default function page() {
     return <p>Index d'entreprise invalide</p>;
   }
 
-  const companyToShow = Object.values(card.shoplist)[companyIndexToShow];
+  const companyToShow:any = Object.values(card.shoplist)[companyIndexToShow];
   const menuItems = Object.values(companyToShow.menu1);
 
   return (
@@ -51,19 +51,19 @@ export default function page() {
         <div>
         
           <ul >
-            <li >
-             {companyToShow.produit.map((produit, index) => (
+          
+             {companyToShow.produit.map((produit:any, index:number) => (
                 <li key={index} > {produit}  </li>
                ))}
               
          
                 
                 <select className="max-w-xs nav-link"> 
-                  {companyToShow.autreproduit.map((produit, index) => (
+                  {companyToShow.autreproduit.map((produit:any, index:number) => (
                     <option key={index} value={produit}> {produit}</option>
                   ))}
                  
-                </select>  </li>
+                </select> 
          
           </ul>
         </div>
@@ -72,7 +72,7 @@ export default function page() {
         <div className="text-center">
         </div>
         <div className="containers">
-         {menuItems.map(menuItem => (
+         {menuItems.map((menuItem:any) => (
         <div key={menuItem.id}  className="flex my-2">
           <p className='title'>{menuItem.title}</p>
           <img src={menuItem.image}  className="image" />

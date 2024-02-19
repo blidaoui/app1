@@ -1,3 +1,6 @@
+.modal1{
+  justify-content: center;
+}
 .button {
     height: 50px;
     width: 200px;
@@ -23,7 +26,6 @@
   
   .type1::after {
     content: "";
-    position: absolute;
     left: 0;
     top: 0;
     transition: all 0.5s ease-in-out;
@@ -45,3 +47,12 @@
     visibility: visible;
     transform: scale(100) translateX(2px);
   }
+.timeInput{
+  margin-bottom: 10%;
+  border-color: black;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,3 +1,4 @@
+
 .containers { 
     display: grid;
     font-size: 15px;
@@ -32,15 +33,11 @@
     background-color: #f9cdad75;
   }
   
-  li {
-    display: flex;
-    float: left;
-    word-spacing: 5px; 
-  }
   
   li  {
     word-spacing: 5px; 
     display: flex;
+    float: left;
     color: rgb(19, 18, 18);
     text-align: center;
     padding: 14px 16px;
