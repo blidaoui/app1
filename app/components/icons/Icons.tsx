@@ -2,7 +2,7 @@ import React from 'react'
 
 function Icons() {
   return (
-    <div>  <a href="pg">
+    <div>  <a href="">
     <img
       src="https://static.vecteezy.com/ti/vecteur-libre/p1/32222460-en-especes-paiement-vecteur-icone-vectoriel.jpg"
       style={{ height: "40px", backgroundColor: "#24A451" }}

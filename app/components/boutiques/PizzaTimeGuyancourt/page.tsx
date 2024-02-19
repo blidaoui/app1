@@ -52,21 +52,16 @@ export default function page() {
         
           <ul >
           
-             {companyToShow.produit.map((produit:any, index:number) => (
-                <li key={index} > {produit}  </li>
-               ))}
-               
+          {menuItems.map((menuItem:any) => (
+                <li key={menuItem.id} > {menuItem.title}</li>
+               ))} 
                 <select className="max-w-xs nav-link"> 
-                  {companyToShow.autreproduit.map((produit:any, index:number) => (
-                    <option key={index} value={produit}> {produit}</option>
-                  ))}
-                 
+                {menuItems.map((menuItem:any) => (
+                    <option key={menuItem.id} value={menuItem.title1}> {menuItem.title1}</option>
+                  ))}     
                 </select> 
-         
           </ul>
         </div>
-      
-   
         <div className="text-center">
         </div>
         <div className="containers">
