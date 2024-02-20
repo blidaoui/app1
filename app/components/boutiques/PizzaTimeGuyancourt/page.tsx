@@ -15,7 +15,7 @@ export default function page() {
     return <p>Index d'entreprise invalide</p>;
   }
 
-  const companyToShow:any = Object.values(card.shoplist)[companyIndexToShow];
+  const companyToShow:any = Object.values(card.shoplist) [companyIndexToShow];
   const menuItems = Object.values(companyToShow.menu1);
 
   return (
@@ -55,11 +55,11 @@ export default function page() {
           {menuItems.map((menuItem:any) => (
                 <li key={menuItem.id} > {menuItem.title}</li>
                ))} 
-                <select className="max-w-xs nav-link"> 
+           {/**  <select className="max-w-xs nav-link"> 
                 {menuItems.map((menuItem:any) => (
-                    <option key={menuItem.id} value={menuItem.title1}> {menuItem.title1}</option>
+                    <option key={menuItem} value={menuItem.title1}> {menuItem.title1}</option>    
                   ))}     
-                </select> 
+                </select> */}
           </ul>
         </div>
         <div className="text-center">
