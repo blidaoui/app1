@@ -1,0 +1,9 @@
+.timeInput{
+  margin-bottom: 10%;
+  border-color: black;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
