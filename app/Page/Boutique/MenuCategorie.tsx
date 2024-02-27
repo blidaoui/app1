@@ -4,7 +4,6 @@ import { Card } from '@nextui-org/react';
 import React, { useState } from 'react';
 import { useSnapshot } from 'valtio';
 import Modal from '../modal/Modal';
-import { type } from 'os';
 
 function MenuCategorie() {
   const [showModal, setShowModal] = useState(false);
